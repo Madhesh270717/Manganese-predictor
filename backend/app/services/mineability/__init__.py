@@ -1,0 +1,1 @@
+"""Mineability Analysis service — placeholder."""

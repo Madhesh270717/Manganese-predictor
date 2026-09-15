@@ -1,0 +1,44 @@
+/* Design system tokens — Spotter AI (PRD semantic colors) */
+:root {
+  /* Semantic risk colors (PRD Sections 7, 11, 15) */
+  --color-good: #16a34a;      /* green  — low risk / recommended */
+  --color-warn: #d97706;      /* yellow — medium / conditional */
+  --color-danger: #dc2626;    /* red    — high / avoid */
+
+  /* Neutrals */
+  --color-bg: #f4f6f8;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text: #1f2937;
+  --color-text-muted: #64748b;
+
+  /* Brand */
+  --color-brand: #0f1b2d;
+  --color-brand-accent: #2563eb;
+  --color-brand-highlight: #7dd3fc;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+.risk-low,
+.risk-good { color: var(--color-good); }
+.risk-medium,
+.risk-warn { color: var(--color-warn); }
+.risk-high,
+.risk-danger { color: var(--color-danger); }
+
+.bg-risk-low,
+.bg-risk-good { background: var(--color-good); }
+.bg-risk-medium,
+.bg-risk-warn { background: var(--color-warn); }
+.bg-risk-high,
+.bg-risk-danger { background: var(--color-danger); }

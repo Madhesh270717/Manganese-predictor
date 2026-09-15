@@ -1,0 +1,32 @@
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.bar-blocks {
+  display: flex;
+  gap: 2px;
+}
+
+.bar-block {
+  flex: 1;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.bar-block.empty { background: var(--color-border); }
+.bar-block.filled-low { background: var(--color-good); }
+.bar-block.filled-medium { background: var(--color-warn); }
+.bar-block.filled-high { background: var(--color-danger); }
+
+.bar-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tone-text-low { color: var(--color-good); }
+.tone-text-medium { color: var(--color-warn); }
+.tone-text-high { color: var(--color-danger); }

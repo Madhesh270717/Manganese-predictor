@@ -1,0 +1,8 @@
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Generating static SQL
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 0001, create core schema: zones + 9 datasets + data source metadata
+INFO  [alembic.runtime.migration] Running upgrade 0001 -> 0002, add unique index on satellite (zone_id, date)
+INFO  [alembic.runtime.migration] Running upgrade 0002 -> 0003, add scenario column + unique index to weather
+INFO  [alembic.runtime.migration] Running upgrade 0003 -> 0004, add equipment_status_history table
+INFO  [alembic.runtime.migration] Running upgrade 0004 -> 0005, add unique index on production (date, zone_id)

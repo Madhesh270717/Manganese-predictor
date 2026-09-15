@@ -1,0 +1,14 @@
+.risk-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.risk-badge-low { background: var(--color-good); }
+.risk-badge-medium { background: var(--color-warn); }
+.risk-badge-high { background: var(--color-danger); }

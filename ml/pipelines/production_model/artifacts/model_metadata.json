@@ -1,0 +1,37 @@
+{
+  "model_name": "random_forest",
+  "model_version": "v1",
+  "feature_columns": [
+    "planned_production",
+    "ore_grade",
+    "rainfall_1d",
+    "rainfall_7d",
+    "rainfall_30d",
+    "fleet_availability",
+    "fleet_downtime",
+    "fleet_maintenance",
+    "fleet_capacity",
+    "active_units",
+    "blast_delay_same_day",
+    "blast_delay_last_3d"
+  ],
+  "target": "actual_production",
+  "split": "time-aware",
+  "train_until": "2026-06-17",
+  "test_rows": 365,
+  "test_metrics": {
+    "xgboost": {
+      "rmse": 43.52380504825668,
+      "mae": 32.26135180329623
+    },
+    "random_forest": {
+      "rmse": 33.83204382123934,
+      "mae": 25.928164114931203
+    },
+    "gradient_boosting": {
+      "rmse": 45.3620976756929,
+      "mae": 33.14496093409692
+    }
+  },
+  "data_type": "statistical_prediction"
+}

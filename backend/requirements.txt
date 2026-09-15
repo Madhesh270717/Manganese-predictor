@@ -1,0 +1,40 @@
+# Spotter AI — backend dependencies (Phase 2/3 pinned versions)
+
+# --- API / web ---
+fastapi==0.115.12
+uvicorn[standard]==0.34.3
+pydantic==2.11.5
+pydantic-settings==2.10.1
+python-dotenv==1.0.1
+
+# --- Database / migrations (Supabase PostgreSQL, no Docker) ---
+sqlalchemy==2.0.41
+# psycopg v3 (binary) — works on Python 3.11–3.14. psycopg2-binary is an
+# acceptable drop-in on Python <=3.12 if preferred (swap the dialect to
+# postgresql+psycopg2:// in .env).
+psycopg[binary]==3.2.13
+alembic==1.16.4
+geoalchemy2==0.17.1
+
+# --- Testing ---
+pytest==8.4.1
+httpx==0.28.1
+
+# --- ML ---
+numpy==2.2.6
+pandas==2.2.3
+scikit-learn==1.6.1
+xgboost==3.0.2
+shap==0.47.1
+
+# --- Geospatial ---
+geopandas==1.0.1
+rasterio==1.5.1
+GDAL==3.6.2
+shapely==2.1.1
+
+# --- Optimization ---
+ortools==9.13.9012
+
+# --- AI Assistant (Module 5, Phase 29) ---
+anthropic==0.47.1

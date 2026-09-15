@@ -1,0 +1,35 @@
+{
+  "model_name": "random_forest",
+  "model_version": "v1",
+  "feature_columns": [
+    "mn_concentration",
+    "fe_concentration",
+    "sio2",
+    "fault_distance",
+    "lineament_distance",
+    "lithology_encoded",
+    "geological_unit_encoded",
+    "drill_hole_count",
+    "drill_avg_depth",
+    "drill_avg_ore_thickness",
+    "drill_avg_mn_grade",
+    "sat_ndvi",
+    "sat_lst",
+    "sat_soil_moisture",
+    "sat_iron_oxide_ratio",
+    "trace_Al2O3",
+    "trace_CaO",
+    "trace_P",
+    "trace_P2O5"
+  ],
+  "cv_roc_auc": {
+    "random_forest": 1.0,
+    "xgboost": 1.0
+  },
+  "label_strategy": "proxy (cluster OR mn>=35 AND holes>=4)",
+  "n_zones": 20,
+  "random_state": 42,
+  "data_type": "statistical_prospectivity",
+  "calibration": "temperature-scaled sigmoid (target positive mean 0.90)",
+  "calibration_temperature": 0.19220554198156545
+}

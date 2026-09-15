@@ -1,0 +1,21 @@
+# Spotter AI — ML dependencies (Phase 1 pinned versions)
+
+numpy==2.2.6
+pandas==2.2.3
+scikit-learn==1.6.1
+xgboost==3.0.2
+shap==0.47.1
+
+# Geospatial
+geopandas==1.0.1
+rasterio==1.5.1
+GDAL==3.6.2
+shapely==2.1.1
+
+# Optimization
+ortools==9.13.9012
+
+# Notebooks / exploration
+jupyter==1.1.1
+matplotlib==3.10.3
+seaborn==0.13.2
