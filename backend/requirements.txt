@@ -34,7 +34,7 @@ GDAL==3.6.2
 shapely==2.1.1
 
 # --- Optimization ---
-ortools==9.13.9012
+ortools==9.15.6755
 
 # --- AI Assistant (Module 5, Phase 29) ---
 anthropic==0.47.1
