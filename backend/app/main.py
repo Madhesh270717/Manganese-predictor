@@ -18,7 +18,7 @@ app = FastAPI(
 )
 
 # CORS: allow the local frontend dev servers (Phases 23–28).
-aapp.add_middleware(
+app.add_middleware(
     CORSMiddleware,
    allow_origins=[
     "http://localhost:5173",
