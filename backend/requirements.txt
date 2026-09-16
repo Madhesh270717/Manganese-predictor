@@ -30,7 +30,7 @@ shap==0.47.1
 # --- Geospatial ---
 geopandas==1.0.1
 rasterio==1.5.1
-GDAL==3.6.2
+GDAL==3.13.3
 shapely==2.1.1
 
 # --- Optimization ---
