@@ -18,19 +18,20 @@ app = FastAPI(
 )
 
 # CORS: allow the local frontend dev servers (Phases 23–28).
-app.add_middleware(
+aapp.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:3000",
         "http://127.0.0.1:5173",
         "http://127.0.0.1:3000",
+        "https://manganese-predictor-gn9d.vercel.app",
+        "https://manganese-predictor.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 app.include_router(api_router)
 
 
